@@ -72,7 +72,7 @@ function createRegister(email,password){
             axios.post(`http://localhost:4000/jwt`, {email:currentUser.email}
             )
             .then(data=>{
-             console.log(data);
+             console.log(data.data.token);
              localStorage.setItem('JWT-token',data.data.token)
              setLoader(false)
 

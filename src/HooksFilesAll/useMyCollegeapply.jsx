@@ -14,7 +14,7 @@ const {userProfile} = useContext(AuthContextPro)
         useQuery(
         ['applycolleges'],
          async () => {
-         const res = await axiosMagic.get(`/applycollegesdata/${userProfile.email}`)
+         const res = await axiosMagic.get(`/applycollegesdata/${userProfile?.email}`)
                 return res.data
             
         })

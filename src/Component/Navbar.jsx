@@ -8,11 +8,11 @@ import useAllUserIdentity from '../HooksFilesAll/useAllUserIdentity';
 
 const Navbar = () => {
     const {userProfile, logoutProfile} = useContext(AuthContextPro)
-    console.log(userProfile);
+
 const [userdetails] = useAllUserIdentity()
-console.log(userdetails);
+
 const findata = userdetails?.find(p=>p.email === userProfile?.email)
-console.log(userdetails);
+
 
   
     const navigation = useNavigate()

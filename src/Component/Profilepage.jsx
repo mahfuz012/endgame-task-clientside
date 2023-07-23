@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
+import AuthProviderPro, { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
 import { Controller, useForm } from 'react-hook-form';
 import useMagicAxiosBoss from '../HooksFilesAll/useMagicAxiosBoss';
 import { useParams } from 'react-router-dom';
@@ -8,14 +8,14 @@ import { useQuery } from '@tanstack/react-query';
 import swal from 'sweetalert';
 
 const Profilepage = () => {
-const [updatevalues,setupdate]= useState(true)
+
 
 const {id} = useParams()
 
 
 
 const [axiosMagic] = useMagicAxiosBoss()
-    const { refetch, isLoading: loading, data: findgmaildetails = [] } =
+    const { refetch, data: findgmaildetails = [] } =
         useQuery(
         ['findgmaildetails'],
          async () => {
@@ -32,7 +32,7 @@ console.log(findgmaildetails);
 
 
 
-const {update_email,displayName,phone,university,blood,address} = findgmaildetails
+const {update_email,email,displayName,phone,university,blood,address} = findgmaildetails
 
 
 
@@ -46,9 +46,6 @@ const {update_email,displayName,phone,university,blood,address} = findgmaildetai
 
 function submitFunction(data){
 
-  refetch()
-
-
 
 
 const email = data.email
@@ -61,21 +58,21 @@ console.log(email,displayName,phone,university,blood,address);
 const updatedetails = {email,displayName,phone,university,blood,address}
 
 axiosMagic.put(`/updateuserdetails/${id}`,updatedetails )
-.then(res=>console.log(res))
-.catch(error=>console.log(error))
-
-
-
-
-
+.then(res=>{
+refetch()
+reset()
 
 
 swal({
   text: `Hi ${userProfile?.displayName},Update Successfully `,
   icon: "success",
     });
+})
+.catch(error=>console.log(error))
 
-reset()
+
+
+
 }
 
 
@@ -92,7 +89,7 @@ w-36 sm:w-48  h-36 sm:h-48 mx-auto' />
 
 <div className='my-10 font-semibold '>
 <p className='my-2'>Name: <span className='mx-2 font-semibold text-blue-500'> {displayName} </span>   </p>
-<p className='my-2'>Email: <span className='mx-2 font-semibold text-blue-500'> {update_email} </span> </p>
+<p className='my-2'>Email: <span className='mx-2 font-semibold text-blue-500'> {update_email?update_email:email} </span> </p>
 <p className='my-2'>university: <span className='mx-2 font-semibold text-blue-500'>  {university}</span></p>
 <p className='my-2'>Address: <span className='mx-2 font-semibold text-blue-500'> {address} </span> </p>
 <p className='my-2'>Phone: <span className='mx-2 font-semibold text-blue-500'> {phone} </span></p>
