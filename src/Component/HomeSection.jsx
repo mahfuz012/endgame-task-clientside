@@ -1,6 +1,7 @@
 import React from 'react';
 import Headerbanner from '../Sharefiles/Headerbannner/Headerbanner';
 import CollegeCardItems from '../Sharefiles/CollegeCardItems';
+import Gallaryfire from './Gallaryfire';
 
 
 
@@ -16,6 +17,11 @@ const HomeSection = () => {
 
 <div className=' '>
 <CollegeCardItems />
+</div>
+
+
+<div className=' my-20'>
+<Gallaryfire />
 </div>
 
 
