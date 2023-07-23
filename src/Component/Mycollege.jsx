@@ -17,12 +17,38 @@ console.log(applycolleges);
 
 
     return (
-        <div className='my-5 border'>
+        <div className='my-5 border  sm:grid grid-cols-2 px-10 gap-5'>
           {
-            applycolleges?.map(p=><p>{p.name}</p>)
+            applycolleges?.map(p=><CollegeCard data={p}  key={p._id}/>)
           }
         </div>
     );
 };
+
+
+
+
+function CollegeCard ({data}){
+const {name,college_details,College_image,admissionDates,events,sports,rating,numberOfResearch,location,establishedYear,website,contactEmail,contactPhone,faculties,coursesOffered,facilities,affiliation} = data 
+return (<>
+
+<div className='border '>
+  <p className='text-3xl p-5'>{name}</p>
+  <img src={College_image} className='w-full h-[300px] object-cover' />
+
+
+</div>
+
+
+
+</>)
+}
+
+
+
+
+
+
+
 
 export default Mycollege;
