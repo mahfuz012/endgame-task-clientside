@@ -1,0 +1,249 @@
+[
+    
+    {
+     "name": "ABC University",
+
+     "college_details": "ABC University is renowned for its exceptional academics, diverse cultural events, and cutting-edge research. With top-rated faculties and state-of-the-art facilities, students here experience a comprehensive education journey that fosters creativity and critical thinking, making them future leaders in their respective fields.",
+
+      "College_image": "https://www.edarabia.com/wp-content/uploads/2018/03/15-Best-Universities-in-the-UK-for-International-Students.jpg",
+      "graduation_image": "https://img.freepik.com/premium-photo/group-students-attending-graduation-ceremony-nice-day_115086-774.jpg?w=2000",
+      "admissionDates": "2023-09-01",
+      "events": ["Orientation Day", "Annual Fest", "Tech Expo", "Sports Carnival"],
+      "researchHistory": [
+        {
+          "year": 2020,
+          "title": "Advancements in Artificial Intelligence"
+        },
+        {
+          "year": 2021,
+          "title": "Sustainable Energy Solutions"
+        },
+        {
+          "year": 2022,
+          "title": "Medical Breakthroughs"
+        }
+      ],
+      "sports": ["Football", "Basketball", "Volleyball", "Tennis"],
+      "rating": 4.7,
+      "numberOfResearch": 250,
+      "location": "City A, State X, Country Z",
+      "establishedYear": 1985,
+      "website": "https://www.abcuniversity.com",
+      "contactEmail": "contact@abcuniversity.com",
+      "contactPhone": "+1 123-456-7890",
+      "faculties": ["Engineering", "Science", "Business", "Arts"],
+      "coursesOffered": ["Computer Science", "Electrical Engineering", "Business Administration", "Psychology"],
+      "facilities": ["Library", "Laboratories", "Sports Complex", "Cafeteria"],
+      "affiliation": "State University",
+      "accreditations": ["Accreditation Body 1", "Accreditation Body 2"]
+    
+  },
+
+
+
+{
+    "name": "XYZ Institute of Technology",
+
+    "college_details": "XYZ Institute of Technology is a leading institution known for its innovation and excellence in engineering and technology. Offering state-of-the-art labs, expert faculty, and a vibrant campus life, students gain practical skills and global exposure, setting them on a path towards successful careers and impactful contributions to the world.",
+    "College_image": "https://www.bestmastersdegrees.com/wp-content/uploads/2014/02/asu.jpg",
+    "graduation_image": "https://media.gettyCollege_images.com/id/533774745/photo/group-of-graduation-students.jpg?s=612x612&w=gi&k=20&c=yoOYUcKKCDYs7aITn0xygFf72absPtrOXTRdjB9QEAs=",
+    "admissionDates": "2023-08-15",
+    "events": ["Tech Fest", "Cultural Night", "Sports Week", "Alumni Meet"],
+    "researchHistory": [
+      {
+        "year": 2019,
+        "title": "Emerging Technologies"
+      },
+      {
+        "year": 2020,
+        "title": "Sustainable Solutions"
+      },
+      {
+        "year": 2022,
+        "title": "Healthcare Innovations"
+      }
+    ],
+    "sports": ["Cricket", "Badminton", "Table Tennis", "Athletics"],
+    "rating": 4.9,
+    "numberOfResearch": 180,
+    "location": "City B, State Y, Country Z",
+    "establishedYear": 1992,
+    "website": "https://www.xyztechinstitute.com",
+    "contactEmail": "contact@xyztechinstitute.com",
+    "contactPhone": "+1 987-654-3210",
+    "faculties": ["Engineering", "Computer Science", "Management", "Applied Sciences"],
+    "coursesOffered": ["Mechanical Engineering", "Computer Science", "Business Analytics", "Biotechnology"],
+    "facilities": ["Central Library", "Research Labs", "Gymnasium", "Food Court"],
+    "affiliation": "Technical University",
+    "accreditations": ["Accreditation Body 3", "Accreditation Body 4"]
+},
+
+
+
+{
+    "name": "PQR College of Arts",
+
+    "college_details": "PQR College of Arts is an artistic hub that nurtures creativity and artistic expression. With a rich history of producing renowned artists, writers, and performers, the college offers diverse programs and opportunities for students to explore their passions and make a meaningful impact on society through their art.",
+    "College_image": "https://www.bestmastersdegrees.com/wp-content/uploads/2014/02/ucdavis-wellness-center-01-537x312.jpg",
+
+    "graduation_image": "https://media.istockphoto.com/id/468438437/photo/graduating-class.jpg?s=612x612&w=0&k=20&c=ArUKIutoXdPft774VhrOYiEDCs1YR0pm2EXdutEwSPM=",
+    "admissionDates": "2023-09-20",
+    "events": ["Art Exhibition", "Literary Fest", "Drama Competition", "Sports Day"],
+    "researchHistory": [
+      {
+        "year": 2020,
+        "title": "Contemporary Art Movements"
+      },
+      {
+        "year": 2021,
+        "title": "Literary Evolution"
+      },
+      {
+        "year": 2022,
+        "title": "Theatrical Innovations"
+      }
+    ],
+    "sports": ["Athletics", "Football", "Basketball", "Chess"],
+    "rating": 4.5,
+    "numberOfResearch": 90,
+    "location": "City C, State Z, Country Y",
+    "establishedYear": 1980,
+    "website": "https://www.pqrartscollege.com",
+    "contactEmail": "contact@pqrartscollege.com",
+    "contactPhone": "+1 456-789-0123",
+    "faculties": ["Fine Arts", "Literature", "Performing Arts", "Visual Communication"],
+    "coursesOffered": ["Painting", "Creative Writing", "Drama & Theatre", "Media Studies"],
+    "facilities": ["Art Studios", "Theater", "Library", "Cafeteria"],
+    "affiliation": "Arts University",
+    "accreditations": ["Accreditation Body 5", "Accreditation Body 6"]
+},
+
+
+
+{
+    "name": "LMN Business School",
+    "College_image": "https://static01.nyt.com/images/2020/03/14/upshot/14up-colleges-remote/14up-colleges-remote-mediumSquareAt3X.jpg",
+    "college_details": "LMN Business School is a premier institution that prepares students for success in the dynamic world of business and management. With a focus on entrepreneurship and innovation, the school offers comprehensive business programs and resources to shape future leaders and visionaries.",
+    "graduation_image": "https://media.istockphoto.com/id/484741611/photo/group-of-diverse-international-students-celebrating-graduation.jpg?s=612x612&w=0&k=20&c=rq6gWCf2scTq_fbvJwSYrL0pC8AfYuV7WDuvRmUmqz0=",
+    "admissionDates": "2023-10-10",
+    "events": ["Business Summit", "Entrepreneurship Workshop", "Marketing Fair", "Corporate Conclave"],
+    "researchHistory": [
+      {
+        "year": 2019,
+        "title": "Emerging Trends in Business"
+      },
+      {
+        "year": 2020,
+        "title": "Sustainable Business Practices"
+      },
+      {
+        "year": 2021,
+        "title": "Digital Marketing Strategies"
+      }
+    ],
+    "sports": ["Basketball", "Volleyball", "Table Tennis", "Swimming"],
+    "rating": 4.6,
+    "numberOfResearch": 120,
+    "location": "City D, State Y, Country X",
+    "establishedYear": 1995,
+    "website": "https://www.lmnbschool.com",
+    "contactEmail": "contact@lmnbschool.com",
+    "contactPhone": "+1 987-654-3210",
+    "faculties": ["Business Administration", "Finance", "Marketing", "Human Resources"],
+    "coursesOffered": ["MBA", "Finance", "Marketing Management", "Human Resource Management"],
+    "facilities": ["Case Study Rooms", "Auditorium", "Sports Complex", "Cafeteria"],
+    "affiliation": "Business University",
+    "accreditations": ["Accreditation Body 7", "Accreditation Body 8"]
+}
+,
+{
+
+    "name": "EFG Medical College",
+    "college_details": "EFG Medical College is dedicated to producing skilled and compassionate healthcare professionals. With state-of-the-art medical facilities and a faculty of experts, students receive comprehensive training and hands-on experience, making them well-equipped to serve and improve global health.",
+    "College_image": "https://wooster.edu/wp-content/uploads/2023/05/fall-kauke-students-1-500x500.jpg",
+    "graduation_image": "https://media.istockphoto.com/id/482362583/photo/multi-ethnic-friends-excitedly-hold-diplomas-after-college-graduation.jpg?s=612x612&w=0&k=20&c=0u-Jm_50Rtdwl5n8vMZ-ROfxEg-BCSmg3ZKJJ_w5CWY=",
+    "admissionDates": "2023-09-15",
+    "events": ["Medical Conference", "Health Camp", "CME Workshops", "Sports Meet"],
+    "researchHistory": [
+      {
+        "year": 2020,
+        "title": "Advancements in Medical Science"
+      },
+      {
+        "year": 2021,
+        "title": "Healthcare Innovations"
+      },
+      {
+        "year": 2022,
+        "title": "Medical Breakthroughs"
+      }
+    ],
+    "sports": ["Swimming", "Basketball", "Volleyball", "Table Tennis"],
+    "rating": 4.8,
+    "numberOfResearch": 300,
+    "location": "City E, State W, Country X",
+    "establishedYear": 1988,
+    "website": "https://www.efgmedicalcollege.com",
+    "contactEmail": "contact@efgmedicalcollege.com",
+    "contactPhone": "+1 567-890-1234",
+    "faculties": ["Medicine", "Dentistry", "Nursing", "Pharmacy"],
+    "coursesOffered": ["Medicine", "Dentistry", "Nursing", "Pharmacy"],
+    "facilities": ["Hospital", "Research Labs", "Library", "Cafeteria"],
+    "affiliation": "Medical University",
+    "accreditations": ["Accreditation Body 9", "Accreditation Body 10"]
+
+}
+,
+
+{
+    "name": "UVW Science Institute",
+    "college_details": "UVW Science Institute is at the forefront of scientific research and innovation. With cutting-edge laboratories, interdisciplinary programs, and renowned faculty, students explore the frontiers of science and technology, driving progress and making significant contributions to society.",
+    "College_image": "https://cdn.britannica.com/03/130603-050-37F7F535/Alliman-Administration-Center-Hesston-College-Mennonite-college.jpg",
+    "graduation_image": "https://media.istockphoto.com/id/1298022712/photo/high-school-graduates.jpg?s=612x612&w=0&k=20&c=OGcUiHQpKzTeb_BotzpwCL3TWpWXHlqWZww94Yta_X4=",
+    "admissionDates": "2023-09-30",
+    "events": ["Science Exhibition", "Research Symposium", "Annual Conference", "Science Quiz"],
+    "researchHistory": [
+      {
+        "year": 2020,
+        "title": "Advancements in Scientific Research"
+      },
+      {
+        "year": 2021,
+        "title": "Sustainable Solutions for the Environment"
+      },
+      {
+        "year": 2022,
+        "title": "Innovations in Technology"
+      }
+    ],
+    "sports": ["Cricket", "Football", "Basketball", "Tennis"],
+    "rating": 4.6,
+    "numberOfResearch": 180,
+    "location": "City F, State V, Country W",
+    "establishedYear": 1990,
+    "website": "https://www.uvwscienceinstitute.com",
+    "contactEmail": "contact@uvwscienceinstitute.com",
+    "contactPhone": "+1 789-012-3456",
+    "faculties": ["Physics", "Chemistry", "Biology", "Computer Science"],
+    "coursesOffered": ["Physics", "Chemistry", "Biology", "Computer Science"],
+    "facilities": ["Research Labs", "Observatories", "Library", "Cafeteria"],
+    "affiliation": "Science University",
+    "accreditations": ["Accreditation Body 11", "Accreditation Body 12"]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+]
+  

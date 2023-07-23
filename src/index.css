@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.outlineSpace{
+    min-height: calc(100vh - 60px) !important;
+  }
