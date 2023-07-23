@@ -31,7 +31,7 @@ return (<>
 
 <div className=' shadow-2xl text-gray-600 pb-5'>
 <img src={College_image} className='w-full h-[300px] object-cover ' />
-<p className='my-5 text-3xl px-5 text-center font-semibold ' > {name}</p>
+<p className='my-5 text-3xl px-5 text-center font-semibold'> {name}</p>
 <p className='px-5 text-md  my-2'>Admission Dates: {admissionDates} </p>
 <p className='px-5 text-md  my-2'>Number of Research: {numberOfResearch}</p>
 
