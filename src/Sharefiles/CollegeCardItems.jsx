@@ -1,35 +1,40 @@
 import React, { useContext } from 'react';
-import useAllUserIdentity from '../HooksFilesAll/useAllUserIdentity';
-
 import useCollegeDetails from '../HooksFilesAll/useCollegeDetails';
 import { Link } from 'react-router-dom';
 import { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
 
-const Colleges = () => {
-  const {userProfile} = useContext(AuthContextPro)
-  const [collgedetais] = useCollegeDetails()
+const CollegeCardItems = () => {
 
-
-
+    const [collgedetais] = useCollegeDetails()
+    const {userProfile} = useContext(AuthContextPro)
 console.log(collgedetais);
+
+
     return (
-        <div className='my-10  sm:grid grid-cols-3 gap-5 px-5'>
-         {
-            collgedetais.map(p=><CollgeCard userProfile={userProfile} key={p._id} data={p}/>)
-         }
+        <div className='border '>
+            <p className='mt-16 mb-10 text-center text-4xl font-semibold text-gray-600'>Here are some of our colleges</p>
+
+<div className='border sm:flex gap-5 px-5'>
+{
+    collgedetais?.slice(0,3).map(p=><CardCollege userProfile={userProfile} key={p._id} data={p}/>)
+}
+</div>
+
+
+
         </div>
     );
 };
 
 
 
-function CollgeCard({data,userProfile}){
-const {_id,College_image, name,rating, admissionDates,numberOfResearch} = data
-return (<>
-
-
-
-<div className='shadow-2xl text-gray-600 pb-5'>
+function CardCollege({data,userProfile}){
+    const {_id,College_image, name,rating, admissionDates,numberOfResearch} = data
+    return (<>
+    
+    
+    
+<div className='shadow-red-200 sm:w-4/12 shadow-2xl text-gray-600 pb-5'>
 <img src={College_image} className='w-full h-[300px] object-cover ' />
 <p className='my-5 text-3xl px-5 text-center font-semibold'> {name}</p>
 <p className='px-5 text-md  my-2'>Admission Dates: {admissionDates} </p>
@@ -49,20 +54,22 @@ return (<>
 
 
 </div>
-
-
-
-
-
-
-
-
-
-</>)
+    
+    
+    
+    
+    
+    
+    
+    
+    </>)
 }
 
 
 
 
 
-export default Colleges;
+
+
+
+export default CollegeCardItems;
