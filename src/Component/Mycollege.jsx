@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import useApplicationforom from '../HooksFilesAll/useApplicationforom';
+import { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
+import useCollegeDetails from '../HooksFilesAll/useCollegeDetails';
 
 const Mycollege = () => {
+const {userProfile} = useContext(AuthContextPro)
+const [collgedetais]= useCollegeDetails()
+ const [applicationdetails] =  useApplicationforom()
 
 
 
@@ -12,7 +18,6 @@ const Mycollege = () => {
 
 
 
-    
     return (
         <div>
           
