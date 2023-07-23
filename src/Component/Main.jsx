@@ -10,6 +10,7 @@ import HomeSection from './HomeSection';
 import DetailsCollege from './DetailsCollege';
 import AdmissionCollege from './AdmissionCollege';
 import AdmissonForm from './AdmissonForm';
+import Mycollege from './Mycollege';
 
 
 
@@ -59,6 +60,10 @@ export const router = createBrowserRouter([
         {
         path:'/admissionid/:id',
         element:<AdmissonForm></AdmissonForm>
+        },
+        {
+        path:'/mycolleges',
+        element:<Mycollege />
         },
     
     

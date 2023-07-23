@@ -30,7 +30,7 @@ function logoutprofiles(){
         <Link to={'/'}><li><a>Home</a></li></Link>
         <Link to={"/Colleges"}><li><a>Colleges</a></li></Link> 
         <Link to={'/admissioncollege'}><li><a>Admission</a></li></Link>
-        <li><a>My College</a></li>
+        <Link to={'/mycolleges'}><li><a>My College</a></li></Link>
     
 
     </>
