@@ -11,7 +11,7 @@ const findCollegeDetails = collgedetais?.find(p=>p._id === id)
 console.log(findCollegeDetails);
 
 
-const {name,college_details,College_image,admissionDates,events,researchHistory,sports,rating,numberOfResearch,location,establishedYear,website,contactEmail,contactPhone,faculties,coursesOffered,facilities,affiliation} = findCollegeDetails
+const {name,college_details,College_image,admissionDates,events,sports,rating,numberOfResearch,location,establishedYear,website,contactEmail,contactPhone,faculties,coursesOffered,facilities,affiliation} = findCollegeDetails
 
 
 

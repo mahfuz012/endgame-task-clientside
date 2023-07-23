@@ -12,9 +12,9 @@ console.log(collgedetais);
 
     return (
         <div className='border '>
-            <p className='mt-16 mb-10 text-center text-4xl font-semibold text-gray-600'>Here are some of our colleges</p>
+            <p className='mt-16 mb-10 text-center text-4xl font-semibold text-gray-600'> ---- Here are some of our colleges ---- </p>
 
-<div className='border sm:flex gap-5 px-5'>
+<div className=' sm:flex gap-5 px-5'>
 {
     collgedetais?.slice(0,3).map(p=><CardCollege userProfile={userProfile} key={p._id} data={p}/>)
 }
@@ -29,7 +29,7 @@ console.log(collgedetais);
 
 
 function CardCollege({data,userProfile}){
-    const {_id,College_image, name,rating, admissionDates,numberOfResearch} = data
+    const {_id,College_image,name,researchHistory,events,sports, admissionDates,} = data
     return (<>
     
     
@@ -38,10 +38,12 @@ function CardCollege({data,userProfile}){
 <img src={College_image} className='w-full h-[300px] object-cover ' />
 <p className='my-5 text-3xl px-5 text-center font-semibold'> {name}</p>
 <p className='px-5 text-md  my-2'>Admission Dates: {admissionDates} </p>
-<p className='px-5 text-md  my-2'>Number of Research: {numberOfResearch}</p>
+<p className='px-5 text-md  my-2'>Research History: <span className='text-blue-500'>{researchHistory?.map(p=><li>{p.title}</li>)}</span> </p>
+<p className='px-5 text-md  my-2'>Events: <span className='text-blue-500'>{events?.map(p=><span>-{p}</span>)}</span> </p>
+<p className='px-5 text-md  my-2'>Sports: <span className='text-blue-500'>{sports?.map(p=><span>-{p}</span>)}</span> </p>
 
-<div style={{alignItems:"center"}} className='px-5 flex justify-between mt-5 '>
-<p className=' py-2 badge bg-red-300 font-semibold '>Rating:<span className='ms-1'>{rating}</span></p>
+<div style={{alignItems:"center"}} className='px-5 flex justify-end mt-5 '>
+
 
 
 {userProfile?<><Link to={`/details/${_id}`}><button className='btn bg-gray-800 text-white'>Details</button></Link></>:<><Link to={`/login`}><button className='btn bg-gray-800 text-white'>Details</button></Link></>

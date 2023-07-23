@@ -40,8 +40,8 @@ axiosMagic.post('/feedbackdata',dataoffeedback )
         </div>
 
 <div className=' p-5'>
-  <p className='text-4xl text-center my-5 font-bold '>Review add please</p>
-  <hr className='border-2 '></hr>
+  <p className='text-4xl text-center text-green-600 my-7 font-bold '>Review add please</p>
+ 
 
 
 <div className='sm:w-8/12 mt-5 mx-auto border-black '>
