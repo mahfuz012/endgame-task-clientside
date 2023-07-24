@@ -1,8 +1,9 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 
 import { Link,  useNavigate,  } from 'react-router-dom';
 import { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
 import useAllUserIdentity from '../HooksFilesAll/useAllUserIdentity';
+import useCollegeDetails from '../HooksFilesAll/useCollegeDetails';
 
 
 
@@ -10,7 +11,7 @@ const Navbar = () => {
     const {userProfile, logoutProfile} = useContext(AuthContextPro)
 
 const [userdetails] = useAllUserIdentity()
-
+const [collgedetais] = useCollegeDetails()
 const findata = userdetails?.find(p=>p.email === userProfile?.email)
 
 
@@ -23,6 +24,32 @@ function logoutprofiles(){
 
 }
 
+const dataref = useRef()
+
+const [datafind,setdata] = useState()
+const [open,setTrue] = useState(false)
+function openmodal(){
+    setTrue(true)
+    const searchvalue= dataref.current.value
+const findata = collgedetais?.find((p) => p.name === searchvalue);
+setdata(findata)
+}
+
+console.log(datafind);
+
+const divRef = useRef();
+useEffect(() => {
+  const handleOutsideClick = (event) => {
+    if (divRef.current && !divRef.current.contains(event.target)) {
+      setTrue(false);
+    }
+  };
+
+  document.addEventListener('mousedown', handleOutsideClick);
+  return () => {
+    document.removeEventListener('mousedown', handleOutsideClick);
+  };
+}, []);
 
 
     const navbarlink = 
@@ -36,14 +63,23 @@ function logoutprofiles(){
         <Link to={'/mycolleges'}><li><a>My College</a></li></Link>
  
 
-    <div style={{alignItems:"center"}} className='flex border'>
-        <input type='text' className='border font-serif text-gray-600 p-1 border-success '/>
+    <div style={{alignItems:"center"}} className='flex  relative'>
+        <input ref={dataref} type='text' className='border font-serif text-gray-600 p-1 border-success '/>
 
 
-        <button className='btn btn-success btn-sm mx-1 '>Search</button>
+        <button onClick={openmodal} className='btn btn-success btn-sm mx-1 '>Search</button>
 
+<div ref={divRef} style={{alignItems:"center"}} className={`bg-white-300 border-2 border-success ${open?"block":"hidden"} bg-white flex flex-col rounded p-8 z-10 w-full absolute top-[2.5rem]`}>
 
+{
+   datafind?<><img src={datafind.College_image}  className='w-2/3 mx-auto'/>
+    <p className='text-center font-bold my-2'>{datafind.name}</p>
+    <Link to={`/details/${datafind._id}`}><button className='btn  bg-gray-800  text-white'>Details</button></Link>
+    </>:<><p className='text-xl font-bold text-center'>No Data Found</p></>
+}
         
+</div>
+
     </div>
 
 

@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import AuthProviderPro, { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
 import { Controller, useForm } from 'react-hook-form';
 import useMagicAxiosBoss from '../HooksFilesAll/useMagicAxiosBoss';
 import { useParams } from 'react-router-dom';
-import useAllUserIdentity from '../HooksFilesAll/useAllUserIdentity';
+
 import { useQuery } from '@tanstack/react-query';
 import swal from 'sweetalert';
 import { Helmet } from 'react-helmet-async';
@@ -89,14 +89,15 @@ swal({
 
 
 
-        <div className=' flex justify-center mt-10'>
+        <div className=' sm:flex justify-center mt-10'>
             
 <div className='sm:w-3/12 border p-5'>
 
 <img src={userProfile?.photoURL} className='rounded-full border-2 border-sky-300 p-2 
 w-36 sm:w-48  h-36 sm:h-48 mx-auto' />
 
-<div className='my-10 font-semibold '>
+<div className='my-10 text-center sm:text-start font-semibold '>
+  <p className='font-bold text-green-600 text-center text-xl mb-5'>Update Data</p>
 <p className='my-2'>Name: <span className='mx-2 font-semibold text-blue-500'> {displayName} </span>   </p>
 <p className='my-2'>Email: <span className='mx-2 font-semibold text-blue-500'> {update_email?update_email:email} </span> </p>
 <p className='my-2'>university: <span className='mx-2 font-semibold text-blue-500'>  {university}</span></p>
