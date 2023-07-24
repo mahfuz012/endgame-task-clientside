@@ -1,16 +1,16 @@
-# b712-summer-camp-client-side-mahfuz012
 
 
-# Website Name : Just Dance School
+
+# Website Name : College Finder
 
 ## Website features
 
-- This webiste has dance related Classes 
-- Three categories user has implement(Admin,Students,Instructor)
+- This webiste has different College
+- Searching College and gallary added 
 - Private route each user and no one view others document 
-- Enroll,Certain Seats, seleceted, Update class all type of things are added
+- Put Review and View The Review all type of things are added
 - Data are collect from mongodb,express js server
-- There Has Stripe Payment System
+
 
 
 
@@ -21,4 +21,4 @@
 **Server:** Node, Express, Mongodb
 
 
-# Live site link : https://just-dance-de139.web.app/
+# Live site link : https://end-game-f53f5.web.app/

@@ -12,7 +12,7 @@ const useMagicAxiosBoss = () => {
 
 
 const axiosMagic = axios.create({
-       baseURL:"http://localhost:4000"
+       baseURL:"https://myapp-psi-khaki.vercel.app"
    })
    
    
