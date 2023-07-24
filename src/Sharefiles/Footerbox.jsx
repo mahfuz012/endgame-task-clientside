@@ -18,27 +18,7 @@ const Footerbox = () => {
     return (
         <div>
       <footer className=" text-center text-neutral-600 dark:bg-neutral-600   dark:text-neutral-200 lg:text-left">
-      <div className="flex    p-6 dark:border-neutral-500 lg:justify-between">
-       
    
-        <div className="flex  justify-center mx-auto">
-          <a href="#!" className="mr-6 dark:text-neutral-200">
-            <FiFacebook className="h-4 w-4" />
-          </a>
-          <a href="#!" className="mr-6 dark:text-neutral-200">
-            <FiTwitter className="h-4 w-4" />
-          </a>
-          <a href="#!" className="mr-6 dark:text-neutral-200">
-            <FiInstagram className="h-5 w-5" />
-          </a>
-          <a href="#!" className="mr-6 dark:text-neutral-200">
-            <FiLinkedin className="h-4 w-4" />
-          </a>
-          <a href="#!" className="dark:text-neutral-200">
-            <FiMail className="h-4 w-4" />
-          </a>
-        </div>
-      </div>
 
 
       <div  className="mx-6 p-5 bg-[#FFF0F5] text-[#7A0BC0] px-10 border  py-10 text-center md:text-left">

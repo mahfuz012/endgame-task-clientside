@@ -34,10 +34,11 @@ axiosMagic.post('/feedbackdata',dataoffeedback )
 
     return (
       <>
+      <div className='mb-20'>
       <Helmet>
         <title>My College</title>
         </Helmet>
-        <div className='my-5   sm:grid grid-cols-2 p-10 gap-5'>
+        <div className='my-5 sm:grid grid-cols-2 p-10 gap-5'>
           {
             applycolleges?.map(p=><CollegeCard data={p}  key={p._id}/>)
           }
@@ -51,7 +52,7 @@ axiosMagic.post('/feedbackdata',dataoffeedback )
 <div className='sm:w-8/12 mt-5 mx-auto border-black '>
 
 
-<form onSubmit={feedbacksubmit} className='border p-5'>
+<form onSubmit={feedbacksubmit} className='border-2 rounded-2xl border-black p-5'>
           <div className="mb-4">
             <label htmlFor="title" className="block text-gray-700 font-bold">
               Title
@@ -118,7 +119,7 @@ axiosMagic.post('/feedbackdata',dataoffeedback )
 </div>
 
 </div>
-
+</div>
 
         </>
 
