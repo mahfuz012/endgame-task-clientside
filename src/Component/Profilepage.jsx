@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import useAllUserIdentity from '../HooksFilesAll/useAllUserIdentity';
 import { useQuery } from '@tanstack/react-query';
 import swal from 'sweetalert';
+import { Helmet } from 'react-helmet-async';
 
 const Profilepage = () => {
 
@@ -80,6 +81,14 @@ swal({
 
 
     return (
+      <>
+
+<Helmet>
+        <title>Profile</title>
+        </Helmet>
+
+
+
         <div className=' flex justify-center mt-10'>
             
 <div className='sm:w-3/12 border p-5'>
@@ -218,6 +227,7 @@ w-36 sm:w-48  h-36 sm:h-48 mx-auto' />
 
 
         </div>
+        </>
     );
 };
 

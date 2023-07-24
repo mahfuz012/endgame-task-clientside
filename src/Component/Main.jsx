@@ -11,6 +11,7 @@ import DetailsCollege from './DetailsCollege';
 import AdmissionCollege from './AdmissionCollege';
 import AdmissonForm from './AdmissonForm';
 import Mycollege from './Mycollege';
+import ErrorPage from './ErrorPage';
 
 
 
@@ -20,7 +21,7 @@ import Mycollege from './Mycollege';
 export const router = createBrowserRouter([
     {
       path: "/",
-      
+      errorElement:<ErrorPage />,
       element: <HomePage />,
       children:[
 
