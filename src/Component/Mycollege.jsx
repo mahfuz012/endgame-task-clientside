@@ -6,6 +6,7 @@ import useMyCollegeapply from '../HooksFilesAll/useMyCollegeapply';
 import { Link } from 'react-router-dom';
 import useMagicAxiosBoss from '../HooksFilesAll/useMagicAxiosBoss';
 import { Helmet } from 'react-helmet-async';
+import swal from 'sweetalert';
 
 const Mycollege = () => {
 const {userProfile} = useContext(AuthContextPro)
@@ -18,14 +19,23 @@ console.log(applycolleges);
 
 function feedbacksubmit (e){
   e.preventDefault()
+  const userpicture= userProfile?.photoURL
 const title = e.target.title.value
 const feedback = e.target.feedback.value
 const rating = e.target.rating.value
-const dataoffeedback = {title,feedback,rating,email:userProfile?.email,name:userProfile?.displayName}
+const dataoffeedback = {userpicture,title,feedback,rating,email:userProfile?.email,name:userProfile?.displayName}
 axiosMagic.post('/feedbackdata',dataoffeedback )
 .then(res=>{
   console.log(res);
   e.target.reset()
+
+  swal({
+    text: "Feedback Done, Thank You",
+    icon: "success",
+  });
+
+
+
 }).catch(error=>{
   console.log(error);
 })
@@ -38,9 +48,19 @@ axiosMagic.post('/feedbackdata',dataoffeedback )
       <Helmet>
         <title>My College</title>
         </Helmet>
+<div>
+{
+  (applycolleges.length < 1)?<p className='text-center my-5 text-4xl text-red-500'>Not yet applied to any college</p>:"" 
+}
+</div>
+
         <div className='my-5 sm:grid grid-cols-2 p-10 gap-5'>
+
+ 
+
           {
             applycolleges?.map(p=><CollegeCard data={p}  key={p._id}/>)
+          
           }
         </div>
 

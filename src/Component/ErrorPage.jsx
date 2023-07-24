@@ -10,6 +10,7 @@ const ErrorPage = () => {
         navigation("/")
     }
     return (
+        <>
         <div className='sm:flex mt-32'>
 
 <Helmet>
@@ -39,6 +40,21 @@ Back To Home, Sweet Home
 
 
         </div>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+        </>
     );
 };
 

@@ -34,7 +34,7 @@ console.log(feedback);
         spaceBetween={30}
         navigation={true}
         autoplay={{
-          delay: 2500,
+          delay: 2300,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -66,14 +66,14 @@ console.log(feedback);
 
 
 function Reviewback({data,userProfile}){
-const {email,feedback,title,name,rating} = data 
+const {email,feedback,title,name,rating,userpicture} = data 
 
 
 return(<>
 
 <div className='border rounded-2xl  p-3 h-[19rem] flex flex-col justify-between'>
     <div>
-        <img src={userProfile?.photoURL} className='w-[5rem] h-[5rem] rounded-full mx-auto border p-1 border-red-500 mt-2 mb-2'/>
+        <img src={userpicture} className='w-[5rem] h-[5rem] rounded-full mx-auto border p-1 border-red-500 mt-2 mb-2'/>
 
         <p className='text-gray-600 font-semibold text-xl text-center'>{name}</p>
         <p className='font-semibold text-blue-500 text-center'>{title}</p>
