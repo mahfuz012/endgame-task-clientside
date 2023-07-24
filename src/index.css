@@ -6,3 +6,22 @@
 .outlineSpace{
     min-height: calc(100vh - 60px) !important;
   }
+
+
+.swiper-pagination{
+  position: relative !important;
+  margin-top: 1rem;
+
+}
+.swiper-pagination-bullet{
+  transform: scale(1.2,1.2);
+}
+
+
+
+/* swiper swiper-initialized swiper-horizontal swiper-backface-hidden mySwiper" */
+
+.swiper{
+  border: 1px solid black;
+  
+}
