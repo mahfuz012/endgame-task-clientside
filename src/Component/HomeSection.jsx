@@ -4,12 +4,17 @@ import CollegeCardItems from '../Sharefiles/CollegeCardItems';
 import Gallaryfire from './Gallaryfire';
 import Researchpaper from './Researchpaper';
 import Reviewfield from './Reviewfield';
+import { Helmet } from 'react-helmet-async';
 
 
 
 const HomeSection = () => {
     return (
 
+<>
+<Helmet>
+        <title>Home</title>
+        </Helmet>
 <div className=''>
 
 <div className=''>
@@ -38,6 +43,9 @@ const HomeSection = () => {
 
 
 </div>
+
+
+</>
     );
 };
 

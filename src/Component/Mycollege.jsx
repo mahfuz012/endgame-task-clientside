@@ -5,6 +5,7 @@ import useCollegeDetails from '../HooksFilesAll/useCollegeDetails';
 import useMyCollegeapply from '../HooksFilesAll/useMyCollegeapply';
 import { Link } from 'react-router-dom';
 import useMagicAxiosBoss from '../HooksFilesAll/useMagicAxiosBoss';
+import { Helmet } from 'react-helmet-async';
 
 const Mycollege = () => {
 const {userProfile} = useContext(AuthContextPro)
@@ -33,6 +34,9 @@ axiosMagic.post('/feedbackdata',dataoffeedback )
 
     return (
       <>
+      <Helmet>
+        <title>My College</title>
+        </Helmet>
         <div className='my-5   sm:grid grid-cols-2 p-10 gap-5'>
           {
             applycolleges?.map(p=><CollegeCard data={p}  key={p._id}/>)

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import useCollegeDetails from '../HooksFilesAll/useCollegeDetails';
 import { Link } from 'react-router-dom';
 import { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
+import { Helmet } from 'react-helmet-async';
 
 const AdmissionCollege = () => {
     const {userProfile} = useContext(AuthContextPro)
@@ -12,6 +13,9 @@ function admissionsubmit(){
 
     return (
         <>
+          <Helmet>
+        <title>Admission</title>
+        </Helmet>
         <div className='p-2'>
         <div className='mt-5'>
             <p className=' text-3xl text-center  font-semibold'>Select Your College</p>

@@ -4,6 +4,7 @@ import useAllUserIdentity from '../HooksFilesAll/useAllUserIdentity';
 import useCollegeDetails from '../HooksFilesAll/useCollegeDetails';
 import { Link } from 'react-router-dom';
 import { AuthContextPro } from '../FirebaseAuthentication/AuthProviderPro';
+import { Helmet } from 'react-helmet-async';
 
 const Colleges = () => {
   const {userProfile} = useContext(AuthContextPro)
@@ -13,11 +14,16 @@ const Colleges = () => {
 
 console.log(collgedetais);
     return (
+      <>
+         <Helmet>
+        <title>Colleges</title>
+        </Helmet>
         <div className='my-10  sm:grid grid-cols-3 gap-5 px-5'>
          {
             collgedetais.map(p=><CollgeCard userProfile={userProfile} key={p._id} data={p}/>)
          }
         </div>
+        </>
     );
 };
 
