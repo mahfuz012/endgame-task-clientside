@@ -104,7 +104,7 @@ useEffect(() => {
                             {navbarlink}
                         </ul>
                     </div>
-                    <a className=" normal-case text-xl">𝒞𝑜𝓁𝓁𝑒𝑔𝑒 𝐹𝒾𝓃𝒹𝑒𝓇 
+                    <a className="font-bold normal-case text-xl">𝒞𝑜𝓁𝓁𝑒𝑔𝑒 𝐹𝒾𝓃𝒹𝑒𝓇 
                
                     </a>
                 </div>
