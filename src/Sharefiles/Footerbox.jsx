@@ -18,7 +18,7 @@ const Footerbox = () => {
     return (
         <div>
       <footer className=" text-center text-neutral-600 dark:bg-neutral-600   dark:text-neutral-200 lg:text-left">
-      <div className="flex    border-b-2 border-pink-200 p-6 dark:border-neutral-500 lg:justify-between">
+      <div className="flex    p-6 dark:border-neutral-500 lg:justify-between">
        
    
         <div className="flex  justify-center mx-auto">

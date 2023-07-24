@@ -71,7 +71,7 @@ const {email,feedback,title,name,rating} = data
 
 return(<>
 
-<div className='  p-3 h-[19rem] flex flex-col justify-between'>
+<div className='border rounded-2xl  p-3 h-[19rem] flex flex-col justify-between'>
     <div>
         <img src={userProfile?.photoURL} className='w-[5rem] h-[5rem] rounded-full mx-auto border p-1 border-red-500 mt-2 mb-2'/>
 

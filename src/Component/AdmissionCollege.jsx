@@ -32,7 +32,7 @@ function admissionsubmit(){
 const {_id,name} = data
 return(<>
 {userProfile?<><Link to={`/admissionid/${_id}`} className=''>
-    <p className='p-5  shadow-md shadow-green-300 text-gray-600 cursor-pointer active:bg-red-300   border-2 border-black text-xl text-center '>{name}</p>
+    <p className='p-5  shadow-md  text-gray-600 cursor-pointer active:bg-red-300   border-2 border-black text-xl text-center '>{name}</p>
 </Link></> : <><Link to={`/login`} className=''>
     <p className='p-5 shadow-md shadow-red-300 text-gray-600 cursor-pointer active:bg-red-300   border text-xl text-center '>{name}</p>
 </Link></>
