@@ -34,7 +34,7 @@ console.log(feedback);
         spaceBetween={30}
         navigation={true}
         autoplay={{
-          delay: 2000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -43,6 +43,7 @@ console.log(feedback);
         modules={[Autoplay, Pagination, Navigation]}
    
         className="mySwiper"
+       
      
       >
        {

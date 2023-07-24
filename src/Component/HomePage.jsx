@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footerbox from "../Sharefiles/Footerbox";
 
 
 const HomePage = () => {
@@ -9,7 +10,9 @@ const HomePage = () => {
             <div className="outlineSpace">
             <Outlet />
             </div>
-
+             <div>
+                <Footerbox />
+             </div>
 
 
 

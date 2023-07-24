@@ -21,7 +21,15 @@
 
 /* swiper swiper-initialized swiper-horizontal swiper-backface-hidden mySwiper" */
 
-.swiper{
-  border: 1px solid black;
-  
+.mySwiper {
+  width: 100% !important;
+}
+
+
+@media screen and (max-width: 767px) {
+  .mySwiper {
+    .swiper-slide {
+      width: 100% !important;
+    }
+  }
 }
